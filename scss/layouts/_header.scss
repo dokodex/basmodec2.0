@@ -1,13 +1,16 @@
+$body-background-color:$color-orange-background;
+$header-background-color:$color-white;
 $header-max-width: $grid;
 $header-title-font-family:$font-family-montserrat;
 $header-menu-backgorund-color:$color-gray-content;
 $header-menu-font-family:$font-family-montserrat;
 $header-menu-font-color1:$color-white;
-$header-menu-font-color2:$color-gray-content;
+$header-menu-font-color2:$color-black;
 $header-menu-link-box-shadow:$box-shadow-litle;
 $icon-menu-color:$color-white;
 
 body{
+  background-color:$body-background-color;
   margin:0;
 }
 
@@ -20,6 +23,7 @@ body{
 
 .header{
   align-items: center;
+  background-color:$header-background-color;
   max-width: $header-max-width;
   margin: auto;
   padding: 0;
@@ -37,6 +41,11 @@ body{
   font-size:2rem;
   font-weight: bold;
   float: left;
+}
+
+.header__img{
+  height:4rem;
+  padding:1rem;
 }
 
 .header__menu{
@@ -70,6 +79,10 @@ body{
   vertical-align: middle;
 }
 
+.header__menu__link:hover{
+  opacity:.6;
+}
+
 .icon--menu{
   height: 1.5rem;
   padding: .5rem;
@@ -91,11 +104,15 @@ body{
 
 @media #{$breakpoints-medium} {
   .header__grid{
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 30% 70%;
   }
 
   .header__title{
     font-size: 3rem;
+  }
+
+  .header__img{
+    height:5rem;
   }
 
   .header__menu__responsive{
@@ -104,7 +121,7 @@ body{
 
   .header__menu{
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 
   .header__menu a{
@@ -114,7 +131,7 @@ body{
 
   .header__menu__link{
     color:$header-menu-font-color2;
-    font-size: 1rem;
+    font-size: .8rem;
     opacity: 1;
     visibility: visible;
   }

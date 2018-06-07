@@ -1,8 +1,11 @@
 $footer-max-width:$grid;
+$footer-background-color:$color-white;
 
 .footer{
+  background-color:$footer-background-color;
   margin: auto;
   max-width: $footer-max-width;
+  min-height:8rem;
   position: relative;
   z-index: 15;
 }
