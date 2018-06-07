@@ -1,4 +1,5 @@
 $body-background-color:$color-orange-background;
+$body-font-family:$font-family-montserrat;
 $header-background-color:$color-white;
 $header-max-width: $grid;
 $header-title-font-family:$font-family-montserrat;
@@ -10,6 +11,7 @@ $header-menu-link-box-shadow:$box-shadow-litle;
 $icon-menu-color:$color-white;
 
 body{
+  font-family:$font-family-montserrat;
   background-color:$body-background-color;
   margin:0;
 }
