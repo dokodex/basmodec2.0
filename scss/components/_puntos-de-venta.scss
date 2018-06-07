@@ -1,0 +1,106 @@
+$about-max-width: $grid-content;
+$puntos-de-venta-info-h2-font-color:$color-gray-content;
+$puntos-de-venta-location-background-color:$color-orange-background;
+$puntos-de-venta-mapsbig-icon-color:$color-white;
+
+.puntos-de-venta{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; // colocar horizontalmente
+  margin: auto;
+  margin-bottom: 5rem;
+  max-width: $about-max-width;
+  position: relative;
+  z-index: 5;  
+}
+
+.puntos-de-venta__box{
+  flex: 0 1 100%;
+  padding: 5rem 0 0 0;  
+}
+
+.puntos-de-venta__grid{
+  display:grid;
+  grid-template-rows: 50% 50%;
+}
+
+.puntos-de-venta__location{
+  position: relative;
+}
+
+.puntos-de-venta__img{
+  width: 100%;
+}
+
+.puntos-de-venta__maps{
+  background-color: $puntos-de-venta-location-background-color;
+  display: none;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  top:0;
+  transition: opacity .2s;
+  opacity: 0;
+  width: 80%;
+}
+
+.puntos-de-venta__maps:hover{
+  opacity: 1;
+}
+
+.puntos-de-venta__mapsbig__link{
+  height: 100%;
+  width: 100%;
+}
+
+.puntos-de-venta__mapsbig__link .icon{
+  height: 3rem;
+  fill:$puntos-de-venta-mapsbig-icon-color;
+  transform: translate(-0rem,4.5rem);
+  
+}
+
+.puntos-de-venta__info{
+  text-align: center;
+}
+
+.puntos-de-venta__info h2{
+  color: $puntos-de-venta-info-h2-font-color;
+  font-size: 15px;
+}
+
+.puntos-de-venta__mapssmall__link{
+  text-decoration: none;
+  color: $puntos-de-venta-info-h2-font-color;
+}
+
+.puntos-de-venta__info .icon{
+  height: 1rem;
+}
+
+@media #{$breakpoints-medium} {
+  .puntos-de-venta__grid{
+    grid-template-columns: 50% 50%;
+  }
+
+  .puntos-de-venta__img{
+    width: 80%;
+  }
+
+  .puntos-de-venta__info{
+    text-align: left;
+  }
+
+  .puntos-de-venta__maps{
+    display: inherit;
+  }
+
+}
+
+@media #{$breakpoints-large} {
+
+}
+
+@media #{$breakpoints-xlarge} {
+
+}
