@@ -251,3 +251,42 @@ body {
 @media only screen and (min-width: 768px) {
   .nuestras-marcas__box {
     flex: 0 1 calc(100%/3); } }
+
+.noticias {
+  background-color: white;
+  margin: auto;
+  max-width: 780px;
+  padding: 5rem 0 5rem 0;
+  position: relative;
+  z-index: 5; }
+
+.noticias__grid {
+  display: grid;
+  grid-template-rows: 50% 50%; }
+
+.noticias__grid h1 {
+  text-align: center; }
+
+.noticias__text {
+  color: #656262;
+  text-align: justify;
+  padding: 1rem; }
+
+.noticias__text h2 {
+  color: black;
+  text-align: left;
+  font-size: 1rem;
+  font-style: italic; }
+
+.noticias__img {
+  width: 100%; }
+
+@media only screen and (min-width: 768px) {
+  .noticias__grid {
+    grid-template-columns: 50% 50%; }
+  .noticias__grid h1 {
+    grid-column: 1 / 3;
+    padding-bottom: 3rem; }
+  .noticias__img {
+    padding-top: 3rem;
+    transform: scale(0.9); } }
