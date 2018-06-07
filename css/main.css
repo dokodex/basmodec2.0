@@ -4,6 +4,7 @@
   src: url("../../imports/typography/Montserrat-Bold.ttf"); }
 
 body {
+  font-family: "Montserrat Bold", sans-serif;
   background-color: rgba(215, 115, 44, 0.8);
   margin: 0; }
 
@@ -116,7 +117,8 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  text-align: center; }
+  text-align: center;
+  padding: 2rem 2rem 0 2rem; }
 
 .footer__flex .flex__box {
   padding: 20px 0 0 0; }
@@ -130,10 +132,15 @@ body {
 
 .footer__rrss {
   flex: 0 1 100%;
-  transition: flex .5s; }
+  transition: flex .5s;
+  text-align: right; }
 
 .footer__rrss__link {
-  text-decoration: none; }
+  text-decoration: none;
+  transition: opacity .2s; }
+
+.footer__rrss__link:hover {
+  opacity: .6; }
 
 .footer__rrss__link .icon {
   height: 2rem;
