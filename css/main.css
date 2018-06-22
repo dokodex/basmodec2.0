@@ -5,7 +5,6 @@
 
 body {
   font-family: "Montserrat Bold", sans-serif;
-  background-color: rgba(215, 115, 44, 0.8);
   margin: 0; }
 
 .vcenter {
@@ -16,11 +15,10 @@ body {
 
 .header {
   align-items: center;
-  background-color: white;
+  background-color: #ff8000;
   max-width: 1280px;
   margin: auto;
   padding: 0;
-  position: relative;
   z-index: 15; }
 
 .header__grid {
@@ -34,17 +32,19 @@ body {
   float: left; }
 
 .header__img {
-  height: 4rem;
-  padding: 1rem; }
+  padding: 10px;
+  width: 50%; }
 
 .header__menu {
-  border-radius: 5px;
-  color: white;
-  float: right;
+  color: black;
   font-family: "Montserrat Bold", sans-serif;
   font-weight: bold;
+  right: 0;
   text-align: right;
-  transition: background-color .2s; }
+  transition: background-color .2s;
+  position: absolute;
+  width: 50%;
+  z-index: 0; }
 
 .header__menu .header__menu__link {
   text-align: center; }
@@ -52,61 +52,74 @@ body {
 .header__menu a {
   display: block; }
 
+.header__menu__link--languages {
+  font-weight: normal; }
+
 .header__menu__link {
   border-top: 1px white solid;
-  color: white;
-  font-size: .5rem;
+  color: black;
+  font-size: 2rem;
   height: 2rem;
   opacity: 0;
   visibility: hidden;
+  padding-top: 2.5rem;
   position: relative;
   text-decoration: none;
   transition: opacity .2s, visibility .2s;
   vertical-align: middle; }
 
 .header__menu__link:hover {
-  opacity: .6; }
+  opacity: .3; }
 
 .icon--menu {
-  height: 1.5rem;
+  fill: white;
+  height: 3.5rem;
   padding: .5rem;
   transition: fill .2s; }
 
 .header__menu.responsive {
-  background-color: #656262; }
+  background-color: white;
+  z-index: 20; }
   .header__menu.responsive .header__menu__link {
     opacity: 1;
     visibility: visible; }
   .header__menu.responsive .icon--menu {
-    fill: white; }
+    fill: black; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .header__grid {
     grid-template-columns: 30% 70%; }
   .header__title {
     font-size: 3rem; }
   .header__img {
-    height: 5rem; }
+    width: 10rem; }
   .header__menu__responsive {
     display: none; }
   .header__menu {
     text-align: center;
-    padding-top: 2rem; }
+    padding-top: 1rem;
+    width: auto; }
   .header__menu a {
     display: inline;
     padding: 1.5rem; }
   .header__menu__link {
-    color: black;
+    color: white;
     font-size: .8rem;
     opacity: 1;
     visibility: visible; }
+  .header__menu__link--languages {
+    color: #656262;
+    padding-right: 2rem; }
   .icon--menu {
     display: none; }
   .header__menu.responsive {
     background-color: transparent; } }
 
 .footer {
-  background-color: white;
+  background-color: #ff8000;
+  color: white;
+  font-family: "Montserrat Bold", sans-serif;
+  font-weight: bold;
   margin: auto;
   max-width: 1280px;
   min-height: 8rem;
@@ -128,12 +141,13 @@ body {
   transition: flex .5s; }
 
 .footer__info__link {
-  text-decoration: none; }
+  color: white;
+  text-decoration: underline; }
 
 .footer__rrss {
   flex: 0 1 100%;
   transition: flex .5s;
-  text-align: right; }
+  text-align: center; }
 
 .footer__rrss__link {
   text-decoration: none;
@@ -150,9 +164,12 @@ body {
   .footer__flex {
     text-align: left; }
   .footer__info {
-    flex: 0 1 80%; }
+    font-size: .8rem;
+    flex: 0 1 100%; }
   .footer__rrss {
-    flex: 0 1 20%; } }
+    flex: 0 1 100%;
+    text-align: right;
+    margin-top: -2rem; } }
 
 .puntos-de-venta {
   display: flex;

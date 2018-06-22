@@ -22,17 +22,19 @@
   <body>
     <div class="header">
       <div class="header__grid">
-        <div class="header__title"><img class="header__img" src="img/logo.png" alt=""></div>
+        <div class="header__title"><a class="header__title__link" href="index.php"><img class="header__img" src="img/logo.png" alt=""></div>
         <nav class="header__menu" id="header__mymenu">
           <a class="header__menu__responsive" href="javascript:void(0);" onclick="menuResponsive()"><?php require('imports/svg/menu.svg'); ?></a>
-          <a class="header__menu__link active" href="">INICIO</a>
-          <a class="header__menu__link active" href="">NUESTRAS MARCAS</a> 
-          <a class="header__menu__link active" href="">IDEAS & NOICIAS</a> 
-          <a class="header__menu__link active" href="">NOSOTROS</a>
-          <a class="header__menu__link active" href="">CONTACTO</a>
+          <a class="header__menu__link header__menu__link--languages active" href="">ESP</a>
+          <a class="header__menu__link header__menu__link--languages active" href="">EUS</a>
+          <a class="header__menu__link active" href="index.php">INICIO</a>
+          <a class="header__menu__link active" href="store.php">PUNTOS DE VENTA</a>
+          <a class="header__menu__link active" href="videos.php">NUESTRAS MARCAS</a>
+          <a class="header__menu__link active" href="music.php">NOTICIAS</a>
+          <a class="header__menu__link active" href="contact.php">CONTACTO</a>  
         </nav>
       </div>
-    </div>  
+    </div>   
 
 
     <script>

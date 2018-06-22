@@ -1,8 +1,12 @@
+$footer-font-family:$font-family-montserrat;
 $footer-max-width:$grid;
-$footer-background-color:$color-white;
+$footer-background-color:$color-corporative;
 
 .footer{
   background-color:$footer-background-color;
+  color: $color-white;
+  font-family:$footer-font-family;
+  font-weight: bold;
   margin: auto;
   max-width: $footer-max-width;
   min-height:8rem;
@@ -28,13 +32,14 @@ $footer-background-color:$color-white;
 }
 
 .footer__info__link{
-  text-decoration:none;
+  color: $color-white;
+  text-decoration:underline;
 }
 
 .footer__rrss{
   flex: 0 1 100%;
   transition: flex .5s;
-  text-align:right;
+  text-align:center;
 }
 
 .footer__rrss__link{  
@@ -61,11 +66,14 @@ $footer-background-color:$color-white;
     text-align: left;
   }
   .footer__info{
-    flex: 0 1 80%
+    font-size: .8rem;
+    flex: 0 1 100%;
   }
 
   .footer__rrss{
-    flex: 0 1 20%
+    flex: 0 1 100%;
+    text-align: right;
+    margin-top: -2rem;
   }
 
 }
