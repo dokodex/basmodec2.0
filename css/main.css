@@ -232,7 +232,7 @@ body {
 .puntos-de-venta__info .icon {
   height: 1rem; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .puntos-de-venta__grid {
     grid-template-columns: 50% 50%; }
   .puntos-de-venta__img {
@@ -265,7 +265,7 @@ body {
   transform: scale(0.8);
   width: 100%; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .nuestras-marcas__box {
     flex: 0 1 calc(100%/3); } }
 
@@ -298,7 +298,7 @@ body {
 .noticias__img {
   width: 100%; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .noticias__grid {
     grid-template-columns: 50% 50%; }
   .noticias__grid h1 {

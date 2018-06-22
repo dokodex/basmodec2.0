@@ -29,13 +29,13 @@ $nuestras-marcas-font-color:$color-black;
 }
 
 @media #{$breakpoints-medium} {
-  .nuestras-marcas__box{
-    flex:0 1 calc(100%/3);
-  }
+
 }
 
 @media #{$breakpoints-large} {
-
+  .nuestras-marcas__box{
+    flex:0 1 calc(100%/3);
+  }
 }
 
 @media #{$breakpoints-xlarge} {
