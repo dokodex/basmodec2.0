@@ -1,15 +1,10 @@
-$footer-font-family:$font-family-montserrat;
 $footer-max-width:$grid;
-$footer-background-color:$color-corporative;
 
 .footer{
-  background-color:$footer-background-color;
-  color: $color-white;
-  font-family:$footer-font-family;
-  font-weight: bold;
+  background: black;
   margin: auto;
-  max-width: $footer-max-width;
-  min-height:8rem;
+  max-width: 100vw;
+  min-height: 100px;
   position: relative;
   z-index: 15;
 }
@@ -19,27 +14,63 @@ $footer-background-color:$color-corporative;
   flex-flow: row wrap;
   justify-content: space-between;
   text-align: center;
-  padding: 2rem 2rem 0 2rem;
+  padding: 0 2rem 0 2rem;
 }
 
-.footer__flex .flex__box{
+.footer__flex__box{
+  flex: 0 1 100%;
+}
+
+.footer__flex .footer__flex__box{
   padding: 20px 0 0 0;
+  margin-bottom: 2rem;
 }
 
 .footer__info{
-  flex: 0 1 100%;
+  color: $color-white;
+  font-family: $font-family-bebas;
+  font-weight: normal;
+  margin-top: .8rem;
   transition: flex .5s;
 }
 
 .footer__info__link{
-  color: $color-white;
+  color:$color-white;
   text-decoration:underline;
 }
 
+.footer__text{
+  font-size:2rem;
+  padding-top:1rem;
+}
+
+.footer__sponsors{
+  margin-top: 1rem;
+  text-align: center;
+}
+
+
+.footer__sponsors__img{
+  width: 4.5rem;
+  padding: 0 .2rem 0 .2rem;
+  transition: opacity .2s;
+}
+
+.footer__sponsors__img:hover{
+  opacity: .6;
+}
+
+.footer__sponsors__img--hxc{
+  width: 2.5rem;
+}
+
+.footer__sponsors__img--trscndntl{
+
+}
+
 .footer__rrss{
-  flex: 0 1 100%;
+  margin-top: 1rem;
   transition: flex .5s;
-  text-align:center;
 }
 
 .footer__rrss__link{  
@@ -48,11 +79,12 @@ $footer-background-color:$color-corporative;
 }
 
 .footer__rrss__link:hover{
-  opacity:.6;
+  opacity: .6;
 }
 
 .footer__rrss__link .icon{
-  height: 2rem;
+  fill: $color-gray-content;
+  height: 4rem;
   padding: 0 1rem 0 0;
 }
 
@@ -65,15 +97,29 @@ $footer-background-color:$color-corporative;
   .footer__flex{
     text-align: left;
   }
+
+  .footer__flex__box{
+    flex: 0 1 calc(100%/3);
+  }
+
   .footer__info{
-    font-size: .8rem;
-    flex: 0 1 100%;
+    text-align: left;
+  }
+
+  .footer__text{
+    font-size:1rem;
+  }
+
+  .footer__sponsors{
+    text-align: center;
   }
 
   .footer__rrss{
-    flex: 0 1 100%;
     text-align: right;
-    margin-top: -2rem;
+  }
+
+  .footer__rrss .icon{
+    height: 2rem;
   }
 
 }
